@@ -1,2 +1,5 @@
 # honeymorning
-scss
+
+scss styles.
+
+## custom define scss styles
