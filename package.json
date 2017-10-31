@@ -1,0 +1,25 @@
+{
+  "name": "honeymorning",
+  "version": "1.0.0-beta.0",
+  "description": "A css library write with scss",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TaylorPzreal/honeymorning.git"
+  },
+  "keywords": [
+    "css",
+    "library",
+    "scss",
+    "framework"
+  ],
+  "author": "TaylorPzreal <taylorpzreal@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TaylorPzreal/honeymorning/issues"
+  },
+  "homepage": "https://github.com/TaylorPzreal/honeymorning#readme"
+}
