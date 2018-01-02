@@ -7,6 +7,9 @@
     "build": "gulp",
     "test": "http-server ./ -p 3000"
   },
+  "files": [
+    "dist"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/TaylorPzreal/primary-style.git"
