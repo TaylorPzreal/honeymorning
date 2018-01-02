@@ -1,7 +1,7 @@
 $fontsize: 10, 12, 14, 16, 18, 20, 22, 24, 28, 30, 32, 36, 48, 64, 72;
 
 @mixin initFont($size) {
-  font-size: #{$size / 10}rem;
+  font-size: #{$size}px;
 }
 
 /**

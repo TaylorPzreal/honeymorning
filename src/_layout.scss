@@ -1,17 +1,17 @@
 // ====== Padding Margin Float Width Height  =======//
 $layoutsizelist: 1, 2, 4, 5, 6, 8, 10, 12, 15, 16, 18, 20, 22, 24, 26, 28, 32, 48, 64, 72, 100, 120;
 $directions: ('l', 'left'), ('r', 'right'), ('t', 'top'), ('b', 'bottom');
-$types: 'padding', 'margin';
+$types: ('p', 'padding'), ('m', 'margin');
 
-@mixin initLayout($type, $size, $isOmni: false) {
+@mixin initLayout($shortType, $type, $size, $isOmni: false) {
   @if $isOmni == true {
     .#{$type}-#{$size} {
-      #{$type}: #{$size / 10}rem;
+      #{$type}: #{$size}px;
     }    
   } @else {
     @each $shortname, $fullname in $directions {
-      .#{$type}-#{$shortname}-#{$size} {
-        #{$type}-#{$fullname}: #{$size / 10}rem;
+      .#{$shortType}#{$shortname}-#{$size} {
+        #{$type}-#{$fullname}: #{$size}px;
       }
     }
   }
@@ -19,16 +19,16 @@ $types: 'padding', 'margin';
 
 // init padding-* margin-*
 @each $size in $layoutsizelist {
-  @each $type in $types {
-    @include initLayout($type, $size, true);
-    @include initLayout($type, $size, false);
+  @each $shortType, $type in $types {
+    @include initLayout($shortType, $type, $size, true);
+    @include initLayout($shortType, $type, $size, false);
   }
 }
 
 // init no-padding-*,no-margin-*
 @each $shortname, $fullname in $directions {
-  @each $type in $types {
-    .no-#{$type}-#{$shortname} {
+  @each $shortType, $type in $types {
+    .no-#{$shortType}#{$shortname} {
       #{$type}-#{$fullname}: 0;
     }
   }
