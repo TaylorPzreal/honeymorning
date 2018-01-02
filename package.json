@@ -1,25 +1,36 @@
 {
-  "name": "honeymorning",
+  "name": "primary-style",
   "version": "1.0.0-beta.0",
-  "description": "A css library write with scss",
-  "main": "index.js",
+  "description": "A library for basic style write with scss",
+  "main": "dist/css/primary-style.min.css",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "gulp"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/TaylorPzreal/honeymorning.git"
+    "url": "git+https://github.com/TaylorPzreal/primary-style.git"
   },
   "keywords": [
+    "primary-style",
     "css",
-    "library",
     "scss",
-    "framework"
+    "library",
+    "base-style"
   ],
   "author": "TaylorPzreal <taylorpzreal@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/TaylorPzreal/honeymorning/issues"
+    "url": "https://github.com/TaylorPzreal/primary-style/issues"
   },
-  "homepage": "https://github.com/TaylorPzreal/honeymorning#readme"
+  "homepage": "https://github.com/TaylorPzreal/primary-style#readme",
+  "devDependencies": {
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^3.9.2",
+    "gulp-copy": "^1.0.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-sequence": "^1.0.0",
+    "gulp-sourcemaps": "^2.6.3"
+  }
 }

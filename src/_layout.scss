@@ -52,6 +52,18 @@ $types: 'padding', 'margin';
   position: absolute;
 }
 
+.overflow-x-hidden {
+  overflow-x: hidden;
+}
+
+.overflow-y-hidden {
+  overflow-y: hidden;
+}
+
+.no-decoration {
+  text-decoration: none;
+}
+
 $layouts: flex, inline-flex, block, inline-block;
 @each $layout in $layouts {
   .#{$layout} {

@@ -1,5 +1,5 @@
-# honeymorning
+# primary-style
 
-scss styles.
+Browser basic styles and useful class.
 
 ## custom define scss styles
