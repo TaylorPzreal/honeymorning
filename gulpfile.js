@@ -29,8 +29,10 @@ gulp.task('minify-css', async () => {
   return await gulp
     .src('./src/primary-style.scss')
     .pipe(sass().on('error', sass.logError))
+    .pipe(sourcemaps.init())
     .pipe(cleanCSS({ compatibility: 'ie11' }))
     .pipe(rename('primary-style.min.css'))
+    .pipe(sourcemaps.write())
     .pipe(gulp.dest('./dist/css'));
 });
 
